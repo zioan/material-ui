@@ -18,10 +18,7 @@ import Container from "@material-ui/core/Container";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
-import AppBar from "@material-ui/core/AppBar";
-import ToolBar from "@material-ui/core/ToolBar";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import Navigation from "./Navigation";
 
 import {
   makeStyles,
@@ -90,15 +87,8 @@ function App() {
       <Container maxWidth="100%">
         <div className="App">
           <header className="App-header">
-            <AppBar color="secondary">
-              <ToolBar>
-                <IconButton>
-                  <MenuIcon />
-                </IconButton>
-                <Typography varian="h6">MUI Themeing</Typography>
-                <Button>LogIn</Button>
-              </ToolBar>
-            </AppBar>
+            <Navigation />
+
             <Typography variant="h1">Page Header h1</Typography>
             <Typography variant="h2">custom slyle h2</Typography>
             <Typography variant="h3" component="div">
